@@ -1,0 +1,328 @@
+// ==========================================================================
+// # Cheat - Dirty styles; quick hot fixes 🤮
+// ==========================================================================
+// TODO: Refactor - till the file is empty.
+
+
+
+
+
+
+
+
+.wpcf7-response-output:not(.custom-response) {
+    display: none!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.glide{position:relative;width:100%;box-sizing:border-box}.glide *{box-sizing:inherit}.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}.glide__slides--dragging{user-select:none}.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows{-webkit-touch-callout:none;user-select:none}.glide__bullets{-webkit-touch-callout:none;user-select:none}.glide--rtl{direction:rtl}
+
+.glide {
+        margin: 0 auto;
+  }
+  .glide__slides {
+    list-style:none;
+    padding: 0;
+    li {
+      margin: 0;
+    }
+  }
+  .glide__slide {
+
+    img {
+    display: none;
+
+        @screen md {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    }
+  }
+  .glide__arrows {
+    width: 100%;
+    bottom: 30px;
+  }
+  .glide__arrow {
+    color: #dbdbdb;
+    border: none;
+    background: rgba(0,0,0,0.4);
+    &.glide__arrow--left {
+      left: 0;
+      border-radius: 0 3px 0 3px;
+    }
+    &.glide__arrow--right {
+      right: 0;
+      border-radius: 3px 0 3px 0; }
+  }
+
+
+  .glide__bullets {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 5%;
+
+    @screen md {
+        transform: inherit;
+        right: 30%;
+        bottom: 13%;
+    }
+}
+
+.glide__bullet {
+    width: 18px;
+    height: 18px;
+    border: 4px solid #fcc50e;
+    border-radius: 50%;
+    margin: 0 10px;
+
+    &--active {
+        background-color: #fcc50e;
+    }
+} 
+
+
+
+
+.js-mobile-navigation {
+    left: 100%;
+    transition: .15s ease-in-out;
+    transform: translateX(0%);
+
+    &.active {
+        transform: translateX(-100%);
+        
+        
+    }
+}
+
+.glide {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.glide__track {
+    overflow: hidden;
+}
+.glide__slides {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    touch-action: pan-Y;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: transform;
+}
+
+
+
+
+
+
+.cheat-text-primary {
+    @apply text-blue-800 #{!important};
+}
+
+.columns-code ul {
+    list-style-type: inherit;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    & li {
+        margin-bottom: 10px;
+    }
+}
+
+.wpcf7-form {
+    @apply mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8;
+}
+
+.contact-label {
+    @apply block text-lg font-medium text-gray-700;
+}
+
+.contact-input {
+    @apply block w-full shadow-sm sm:text-lg border border-gray-300 rounded-md;
+    height: 40px;
+    padding: 0 12px;
+    // focus:ring-grape-500 focus:border-grape-500
+}
+.contact-textarea {
+    @apply block w-full shadow-sm sm:text-lg border border-gray-300 rounded-md;
+    // focus:ring-grape-500 focus:border-grape-500
+    max-height: 140px;
+    padding: 7px 12px;
+}
+
+
+.wpcf7-submit {
+    @apply inline-block text-white py-4 px-4 px-6 w-full md:w-auto bg-primary-400 hover:bg-primary-600 rounded-full mr-4;
+}
+
+.wpcf7-response-output {
+    @apply sm:col-span-2;
+}
+
+
+
+p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aaa {
+    &span {
+        display: inline-block;
+        position: relative;
+        color: red!important;
+    }
+    & span::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 14px;
+        background-color: #fed800;
+        display: block;
+        bottom: 8px;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.columns-code a {
+    @apply text-primary-600;
+}
+
+.article-prose {
+    background-color: white;
+    @apply p-8 my-12;
+    // max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+
+  
+
+    & img {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    & p {
+        margin-bottom: 15px;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    & h2,
+    & h3 {
+        margin-bottom: 15px;
+    }
+
+    & h1 {
+
+    }
+
+    & h2 {
+        @apply text-2xl;
+    }
+
+    & h3 {
+        @apply text-xl;
+    }
+}
+
+
+
+
+
+
+
+
+.overlay {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.lead-text {
+    font-size: 28px;
+}
+
+
+
+.gradient {
+
+    &--primary {
+        background: theme('colors.primary.default');
+        background: linear-gradient(123deg, theme('colors.primary.default') 0%, theme('colors.primary.300') 56.8%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &-hover:hover {
+            box-shadow: 0px 4px 25px 3px #f99622;
+        }
+    }
+
+    &__secondary {
+        &--bottom {
+            background: theme('colors.secondary.default');
+            background: linear-gradient(123deg, theme('colors.secondary.default') 0%, theme('colors.secondary.300') 180%);
+            background: linear-gradient(180deg, #FFA842 46.7%, #FAFE39 127.63%), linear-gradient(180deg, #FFA842 0%, #FAFE39 150%), #1A1B1D;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            &-hover:hover {
+                box-shadow: 0px 4px 25px 3px #f99622;
+            }
+        }
+    }
+
+}
+
+
+
+.gradient-text {
+
+    &--primary {
+        background: linear-gradient(123deg, theme('colors.primary.default') 0%, theme('colors.primary.300') 56.8%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &--secondary {
+        background: linear-gradient(123deg, theme('colors.secondary.default') 0%, theme('colors.secondary.300') 200%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+}

@@ -1,0 +1,28 @@
+// ==========================================================================
+// # Excerpt Services
+// ==========================================================================
+
+
+//TODO: Refactor into an object
+.excerpt-service {
+    -webkit-transition: transform 200ms ease-in-out;
+    -ms-transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+        transform: translateY(1.7rem) scale(1.05);
+    }
+
+    &--other {
+        &:hover {
+            transform: translateY(-0.3rem) scale(1.05);
+        }
+    }
+
+    &__svg {
+        font-size: 3em;
+        height: 100px;
+        width: 80px;
+        fill: #02393c;
+    }
+}

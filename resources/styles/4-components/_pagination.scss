@@ -1,0 +1,29 @@
+// ==========================================================================
+// # Pagination
+// ==========================================================================
+
+
+.pagination {
+    display: inline-block;
+    background: #e5f6fc;
+    color: black;
+    padding: 17px 47px;
+    border-radius: 31px;
+
+    & .page-numbers:not(.prev){
+        display: inline-block;
+        align-items: center;
+        vertical-align: baseline;
+        width: 30px;
+        height: 30px;
+    }
+
+    & .current {
+        background: #1baadd;
+        color: white;
+        border-radius: 50%;
+        
+        line-height: 30px;
+    }
+
+}

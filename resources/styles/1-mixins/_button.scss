@@ -1,0 +1,62 @@
+// ==========================================================================
+// # Mixins: Button
+// ==========================================================================
+
+
+
+// # Mixins: Button Mixin
+// ==========================================================================
+@mixin button($color, $background, $border: $background) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+    border: 2px solid $border;
+
+    &:hover {
+        transition: 0.25s;
+        @if ($background == transparent and $border == transparent) {
+            /* Add border for transparent buttons */
+            @if ($color == #000) {
+                border: 2px solid #ccc;
+            } @else {
+                border: 2px solid $color;
+            }
+        } @else if $background != $border and $background != #fff {
+            /* Add a fill for non-white outline buttons */
+            background-color: $border; // whatever the color might be darker or not
+            color: #fff;
+        } @else {
+            /* Darken the background for other buttons */
+            color: $color;
+            border: 2px solid $border;
+            background-color: darken($background, 5%);
+        }
+    }
+
+    &[disabled] {
+        cursor: not-allowed;
+        color: $color;
+        border: 2px solid $background;
+        background-color: $border;
+    }
+
+}
+// linear-gradient(to right, #ff555b, #ff531a) !important - button nice shade
+// trust, relationship, once i understand what yor culture is and understand ur culture - floatboat sustainability, global webdesing provider that wants to do withcommunity freelancer, small/med entreperises
+
+
+
+// # Mixins: Button-size
+// ==========================================================================
+@mixin button-size(
+    $padding-vertical: 7px,
+    $padding-horizontal: 12px,
+    $font-size: 12px,
+    $line-height: 12px,
+    $border-radius: 5px
+) {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    line-height: $line-height;
+    border-radius: $border-radius;
+}

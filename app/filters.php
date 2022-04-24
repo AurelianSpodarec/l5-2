@@ -1,0 +1,45 @@
+<?php
+
+namespace App;
+
+
+// Table of Content
+//
+//
+//  - Excerpt
+//  - Other
+//
+//
+
+
+/////////////////////////////////////////////////////////////////////////
+//
+// # EXCERPT
+//
+/////////////////////////////////////////////////////////////////////////
+
+
+add_filter('excerpt_more', function () {
+    return sprintf(' &hellip;', get_permalink(), __('', 'sage'));
+});
+
+
+add_filter('excerpt_length', function($length) {
+    return 30;
+});
+
+
+/////////////////////////////////////////////////////////////////////////
+//
+// # OTHER
+//
+/////////////////////////////////////////////////////////////////////////
+
+
+/**
+ * Add SVG Support
+ */
+add_filter('upload_mimes', function ($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+});

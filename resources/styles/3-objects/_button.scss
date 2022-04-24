@@ -1,0 +1,90 @@
+// // ==========================================================================
+// // # Objects: Button
+// // ==========================================================================
+
+.button {
+    // @include button-size();
+    // margin: 5px;
+    // cursor: pointer;
+    appearance: none;
+    outline: none;
+    -webkit-appearance: none;
+    font-weight: 500;
+    font-family: inherit; 
+    font-size: 1.125em;
+    // transition: background-color 350ms,transform 350ms,-webkit-transform 350ms;
+    transition: .1s ease-in-out;
+
+    // &:hover {
+    //     transform: scale(.97);
+    // }
+    
+
+//     &.button-small {
+
+//     }
+
+    &.button-medium {
+        padding: 16px 36px;
+        border-radius: 10px;
+    }
+
+    &.button-large {
+        padding: 21px 41px;
+        font-size: 1.3em;
+    }
+
+    // &.button-solid {
+    //     &.button-primary {
+    //         @include button(theme('colors.white'), theme('colors.primary.500'), theme('colors.primary.300'));
+    //         &:hover {
+    //             box-shadow: 0px 4px 25px 3px theme('colors.primary.300');
+    //         }
+    //     }
+
+    //     &.button-secondary {
+    //         @include button(theme('colors.white'), theme('colors.secondary.500'), theme('colors.secondary.300'));
+    //     }
+
+    //     &.button-success {
+    //         @include button(theme('colors.white'), theme('colors.success.500'), theme('colors.success.300'));
+    //     }
+
+    //     &.button-warning {
+    //         @include button(theme('colors.white'), theme('colors.warning.500'), theme('colors.warning.300'));
+    //     }
+
+    //     &.button-danger {
+    //         @include button(theme('colors.white'), theme('colors.danger.500'), theme('colors.danger.300'));
+    //     }
+
+    //     &.button-info {
+    //         @include button(theme('colors.white'), theme('colors.info.500'), theme('colors.info.300'));
+    //     }
+    // }
+    // &.button-outline {
+    //     &.button-primary {
+    //         @include button(theme('colors.primary.default'), transparent, theme('colors.primary.default'));
+    //     }
+
+    //     &.button-secondary {
+    //         @include button(theme('colors.secondary.default'), transparent, theme('colors.secondary.default'));
+    //     }
+
+    //     &.button-success {
+    //         @include button(theme('colors.success.default'), transparent, theme('colors.success.default'));
+    //     }
+
+    //     &.button-warning {
+    //         @include button(theme('colors.warning.default'), transparent, theme('colors.warning.default'));
+    //     }
+
+    //     &.button-danger {
+    //         @include button(theme('colors.danger.default'), transparent, theme('colors.danger.default'));
+    //     }
+
+    //     &.button-info {
+    //         @include button(theme('colors.info.default'), transparent, theme('colors.info.default'));
+    //     }
+    // }
+}
